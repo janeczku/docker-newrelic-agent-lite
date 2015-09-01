@@ -1,0 +1,14 @@
+newrelic-agent:
+  image: 'tutum.co/janeczku/newrelic-agent:latest'
+  deployment_strategy: every_node
+  environment:
+    - NRSYSMOND_hostname=$TUTUM_NODE_HOSTNAME
+    - NRSYSMOND_license_key=REPLACE_WITH_YOUR_KEY
+  net: host
+  pid: host
+  privileged: true
+  restart: on-failure
+  volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'
+    - '/dev:/dev'
+    - '/sys:/sys'
