@@ -10,7 +10,7 @@ fi
 
 rootname="janeczku"
 
-version="2.1.0.124"
+version="2.2.0.125"
 if [ $# -ne 0 ]
   then
 version=$1
