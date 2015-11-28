@@ -11,4 +11,4 @@ RUN tar xvfz /tmp/newrelic-sysmond.tar.gz -C /tmp && \
   mv /tmp/newrelic-sysmond-*-linux/daemon/nrsysmond.x64 /bin/nrsysmond && \
   rm -rf /tmp/*
 
-CMD ["/bin/nrsysmond","-E","-F","-l","/dev/stdout","-d","info"]
+CMD ["/bin/nrsysmond","-E","-F","-l","/dev/stdout"]

@@ -24,5 +24,5 @@ docker build -t ${rootname}/newrelic-agent:${version} .
 docker tag --force=true ${rootname}/newrelic-agent:${version}  ${rootname}/newrelic-agent:latest
 
 #push the two tagged images
-#docker push ${rootname}/newrelic-agent:${version}
-#docker push ${rootname}/newrelic-agent:latest
+docker push ${rootname}/newrelic-agent:${version}
+docker push ${rootname}/newrelic-agent:latest
